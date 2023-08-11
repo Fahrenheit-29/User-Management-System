@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+ 
+  
+  
+  
+   
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <jsp-file>/index.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/Welcome</url-pattern> <!-- Welcome page or the index page -->
+</servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginpage</servlet-name>
+    <jsp-file>/LoginPage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>loginpage</servlet-name>
+    <url-pattern>/LoginPage</url-pattern> <!-- Login Page -->
+</servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>forgotpassword</servlet-name>
+    <jsp-file>/ForgotPassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>forgotpassword</servlet-name>
+    <url-pattern>/ForgotPassword</url-pattern> <!-- Forgot Password Pages -->
+</servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>registration</servlet-name>
+    <jsp-file>/RegistrationPage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>registration</servlet-name>
+    <url-pattern>/RegistrationPage</url-pattern> <!-- Registration Page -->
+</servlet-mapping>
+  
+ 
+ <servlet>
+    <servlet-name>resetpass</servlet-name>
+    <jsp-file>/ResetPassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>resetpass</servlet-name>
+    <url-pattern>/ResetPassword</url-pattern> <!-- Reset Password Page -->
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>changepassword</servlet-name>
+    <jsp-file>/ChangePassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>changepassword</servlet-name>
+    <url-pattern>/ChangePassword</url-pattern> <!-- Change Password Page -->
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>administrator</servlet-name>
+    <jsp-file>/Administrator.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>administrator</servlet-name>
+    <url-pattern>/Admin</url-pattern> <!-- Admin Page -->
+</servlet-mapping>
+
+
+
+
+ <servlet>
+    <servlet-name>adminview</servlet-name>
+    <jsp-file>/AdminView.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>adminview</servlet-name>
+    <url-pattern>/AdminView</url-pattern> <!-- AdminView -->
+</servlet-mapping>
+
+
+
+    
+   <servlet>
+    <servlet-name>userpage</servlet-name>
+    <jsp-file>/UserPage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>userpage</servlet-name>
+    <url-pattern>/UserPage</url-pattern> <!-- UserPage -->
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>validate</servlet-name>
+    <jsp-file>/Validate.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>validate</servlet-name>
+    <url-pattern>/Validate</url-pattern> <!-- Validation Page extend function of Login Page -->
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>editprofile</servlet-name>
+    <jsp-file>/EditProfile.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>editprofile</servlet-name>
+    <url-pattern>/EditProfile</url-pattern> <!-- Edit profile page in user side-->
+</servlet-mapping>
+
+
+
+ <servlet>
+    <servlet-name>view</servlet-name>
+    <jsp-file>/View.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>view</servlet-name>
+    <url-pattern>/View</url-pattern> <!-- View  page in both  side-->
+</servlet-mapping>
+  
+  
+ <servlet>
+    <servlet-name>search</servlet-name>
+    <jsp-file>/Search.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/Search</url-pattern> <!-- Search page in both  side-->
+</servlet-mapping>
+  
+   <servlet>
+    <servlet-name>usersearch</servlet-name>
+    <jsp-file>/UserSearch.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>usersearch</servlet-name>
+    <url-pattern>/UserSearch</url-pattern> <!-- User Search page in both  side-->
+</servlet-mapping>
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>approval</servlet-name>
+    <jsp-file>/Approval.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>approval</servlet-name>
+    <url-pattern>/Approval</url-pattern> <!-- approval page in both  side-->
+</servlet-mapping>
+
+
+   <servlet>
+    <servlet-name>update</servlet-name>
+    <jsp-file>/Update.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/Update</url-pattern> <!-- update  page in both  side-->
+</servlet-mapping>
+
+  <servlet>
+    <servlet-name>adminchangepass</servlet-name>
+    <jsp-file>/AdminChangePass.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>adminchangepass</servlet-name>
+    <url-pattern>/AdminChangePass</url-pattern> <!-- Admin change pass page in both  side-->
+</servlet-mapping>
+  
+  
+
+
+  
+  
+   <servlet>
+    <servlet-name>createaccount</servlet-name>
+    <jsp-file>/Create_Account.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>createaccount</servlet-name>
+    <url-pattern>/Create_Account</url-pattern> <!-- Create Account  page in both  side-->
+</servlet-mapping>
+
+
+
+
+  <servlet>
+    <servlet-name>HTTPcodes</servlet-name>
+    <jsp-file>/404.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>HTTPcodes</servlet-name>
+    <url-pattern>/404</url-pattern> <!-- 404 error  page in both  side-->
+</servlet-mapping>
+  
+  
+
+<error-page>
+
+	<error-code>404</error-code>
+	<location>/404</location>
+
+
+
+</error-page>
+  
+  
+   <error-page>
+  <exception-type>java.lang.Throwable</exception-type>
+  <location>/error.jsp</location>
+  </error-page>
+  
+   
+   <session-config>
+    <session-timeout>15</session-timeout>		<!-- SESSION  TIMEOUT IN 15 minutes  -->
+  </session-config>
+  
+    <welcome-file-list>
+    <welcome-file>Page</welcome-file>
+  
+  </welcome-file-list>
+  
+   
+</web-app>

@@ -1,0 +1,263 @@
+@charset "ISO-8859-1";
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../img/backcground.svg") no-repeat center center;
+    background-size: cover;
+}
+
+#nav-content {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#nav-content .navbar .nav-item .nav-link {
+    color: white;
+    margin: 0px 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#nav-content .navbar .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .075rem;
+    background-color: rgba(217, 243, 217, .8);
+    transform: scale(0, 1);
+    transition: transform .3s ease-in-out;
+}
+
+#nav-content .navbar .nav-item .nav-link:hover::after {
+    transform: scale(1, 1);
+}
+
+
+/* main content in front  ui page */
+
+#main-content {
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.main-title {
+    padding: 45px;
+    animation: movedown 1s linear;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+   0% {
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.main-title h1 {
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+
+.main-title h3 {
+    letter-spacing: 10px;
+}
+
+.main-title h1,
+.main-title h3,
+.main-title h6 {
+    padding-bottom: 10px;
+}
+
+.main-title h6 {
+    font-weight: 700;
+}
+
+.main-title button,
+.main-title input[type=text] {
+    font-size: 1rem;
+}
+
+.main-title input[type=text] {
+    padding-left: 50px;
+}
+
+.main-input {
+    position: relative;
+}
+
+.main-input i {
+    position: absolute;
+    left: 6px;
+    color: rgba(138, 137, 137, 0.8);
+    font-size: 20px;
+    top: 10px;
+    background-color: #ffff;
+}
+
+
+/* main image */
+
+.main-image {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+    animation: moveLeft 1s linear;
+    visibility: hidden;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.main-image img {
+    width: 100%;
+    display: block;
+}
+
+
+/* login */
+
+#line {
+    text-decoration: underline;
+}
+
+.Form-width {
+    max-width: 800px;
+    width: 100%;
+    margin: 200px auto 0px auto;
+}
+
+.Form-width .first-box {
+    position: relative;
+    background-color: #0099ff;
+    padding: 50px;
+    height: 100%;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form-width .first-box img {
+    width: 50%;
+    height: auto;
+    margin: 10px 0px;
+}
+
+.Form-width .first-box h1 {
+    letter-spacing: 8px;
+}
+
+.Form-width .second-box {
+    background-color: #ffff;
+    box-shadow: 5px 5px #0099ff;
+    padding: 100px 30px;
+    border-radius: 25px;
+}
+
+.Form-width .myCard {
+    position: relative;
+    background-color: #ffff;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.form-link {
+    text-align: right;
+}
+
+.form-link p {
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.Form-width .btn-primary {
+    background-color: #0099ff;
+    color: white;
+}
+
+.Form-width .form-link1 a {
+    font-size: .8rem;
+}
+
+.Form-width a:visited {
+    color: #0099ff;
+}
+
+.Form-width .icon i {
+    color: #0099ff;
+}
+
+
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    padding: 10px 0px;
+}
+
+.input-control .login-error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 761px) and (min-width: 576px) {
+    .Form-width .first-box img {
+        max-width: 40%;
+    }
+    .main-image {
+        max-width: 600px;
+        max-width: 80%;
+        margin-top: 100px;
+        animation: moveLeft 1s linear;
+        visibility: hidden;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards;
+    }
+}
